@@ -1,6 +1,6 @@
 {
   "type": "cobblemon:simple_pokedex_def",
-  "id": "cobblemon:simple",
+  "id": "cobblemon:hybrids",
   "sortOrder": 12,
   "entries": [
     "cobblemon:tyrarch",

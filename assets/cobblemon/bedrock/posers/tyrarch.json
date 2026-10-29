@@ -1,0 +1,58 @@
+{
+ "head": "head",
+ "portraitScale": 0.8,
+ "portraitTranslation": [ 0, 1, 0 ],
+ "profileScale": 0.8,
+ "profileTranslation": [ 0, 0.7, 0 ],
+
+ "poses": {
+  "standing": {
+    "poseTypes": ["STAND", "NONE", "PORTRAIT", "PROFILE"],
+          "condition": "!q.in_air",
+    "isBattle": false,
+    "animations": ["look",
+      "q.bedrock('tyrarch', 'ground_idle')"
+    ],
+    "quirks": [
+      "q.bedrock_quirk('tyrarch', 'blink')"
+    ]
+  },
+   "battle-standing": {
+      "poseTypes": ["STAND"],
+      "isBattle": true,
+      "animations": [
+        "q.look('head')",
+        "q.bedrock('tyrarch', 'battle_idle')"
+      ],
+      "quirks": ["q.bedrock_quirk('tyrarch', 'blink')"]
+    },
+
+  "walking": {
+    "poseTypes": ["WALK"],
+      "condition": "!q.in_air && !q.is_sprinting",
+    "animations": ["look",
+      "q.bedrock('tyrarch', 'ground_walk')"
+    ],
+    "quirks": ["q.bedrock_quirk('tyrarch', 'blink')"]
+  },
+
+  "float": {
+    "poseTypes": ["FLOAT"],
+    "animations": [
+      "q.bedrock('tyrarch', 'ground_idle')"
+    ],
+    "quirks": ["q.bedrock_quirk('tyrarch', 'blink')"]
+  },
+  "swim": {
+    "poseTypes": ["SWIM"],
+    "animations": [
+      "q.bedrock('tyrarch', 'ground_walk')"
+    ],
+    "quirks": ["q.bedrock_quirk('tyrarch', 'blink')"]
+  },
+  "sleep": {
+    "poseTypes": ["SLEEP"],
+    "animations": ["q.bedrock('tyrarch', 'sleep')"]
+  }
+ }
+}

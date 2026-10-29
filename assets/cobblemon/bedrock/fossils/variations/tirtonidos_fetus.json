@@ -1,0 +1,13 @@
+{
+  "name": "cobblemon:tirtonidos_fetus",
+  "order": 0,
+  "variations": [
+    {
+      "aspects": [],
+      "poser": "cobblemon:tirtonidos_fetus",
+      "model": "cobblemon:tirtonidos_fetus.geo",
+      "texture": "cobblemon:textures/fossils/tirtonidos_fetus.png",
+      "layers": []
+    }
+  ]
+}

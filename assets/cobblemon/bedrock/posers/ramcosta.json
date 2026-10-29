@@ -1,0 +1,117 @@
+{
+ "head": "head",
+ "portraitScale": 0.5,
+ "portraitTranslation": [ -0.5,1, 0 ],
+ "profileScale": 0.4,
+ "profileTranslation": [ 0, 1, 0 ],
+
+ "poses": {
+  "standing": {
+    "poseTypes": ["STAND", "NONE", "PORTRAIT", "PROFILE"],
+          "condition": "!q.in_air",
+    "isBattle": false,
+    "animations": ["look",
+      "q.bedrock('ramcosta', 'ground_idle')"
+    ],
+    "quirks": [
+      "q.bedrock_quirk('ramcosta', 'blink')"
+    ]
+  },
+   "battle-standing": {
+      "poseTypes": ["STAND"],
+      "isBattle": true,
+      "animations": [
+        "q.look('head')",
+        "q.bedrock('ramcosta', 'battle_idle')"
+      ],
+      "quirks": ["q.bedrock_quirk('ramcosta', 'blink')"]
+    },
+
+  "walking": {
+    "poseTypes": ["WALK"],
+      "condition": "!q.in_air && !q.is_sprinting",
+    "animations": ["look",
+      "q.bedrock('ramcosta', 'ground_walk')"
+    ],
+    "quirks": ["q.bedrock_quirk('ramcosta', 'blink')"]
+  },
+      "running": {
+      "poseTypes": ["WALK"],
+      "isBattle": false,
+      "condition": "!q.in_air && q.is_sprinting",
+      "animations": [
+        "q.look('head')",
+        "q.bedrock('ramcosta', 'ground_walk')"
+      ],
+      "quirks": ["q.bedrock_quirk('ramcosta', 'blink')"]
+    },
+
+    "run-jump": {
+      "poseTypes": ["STAND", "WALK"],
+      "condition": "q.is_ridden && q.in_air && q.is_sprinting",
+      "animations": [
+        "q.look('head')",
+        "q.bedrock('ramcosta', 'ground_walk')"
+      ],
+      "quirks": [
+        "q.bedrock_quirk('ramcosta', 'blink')"
+      ],
+      "transformTicks": 2,
+      "transformToTicks": 2
+    },
+
+  "walk-jump": {
+      "poseTypes": ["STAND", "WALK"],
+      "condition": "q.is_ridden && q.in_air && !q.is_sprinting",
+      "animations": [
+        "q.look('head')",
+        "q.bedrock('ramcosta', 'ground_idle')"
+      ],
+      "quirks": [
+        "q.bedrock_quirk('ramcosta', 'blink')"
+      ],
+      "transformTicks": 2,
+      "transformToTicks": 2
+    },
+
+
+
+  "float": {
+    "poseTypes": ["FLOAT"],
+    "animations": [
+      "q.bedrock('ramcosta', 'water_idle')"
+    ],
+    "quirks": ["q.bedrock_quirk('ramcosta', 'blink')"]
+  },
+
+    "mount-surfacewater-float": {
+    "poseTypes": ["STAND", "FLOAT"],
+      "condition": "q.is_ridden",
+    "animations": [
+      "q.bedrock('ramcosta', 'water_idle')"
+    ],
+    "quirks": ["q.bedrock_quirk('ramcosta', 'blink')"]
+  },
+
+  "swim": {
+    "poseTypes": ["SWIM"],
+    "animations": [
+      "q.bedrock('ramcosta', 'water_swim')"
+    ],
+    "quirks": ["q.bedrock_quirk('ramcosta', 'blink')"]
+  },
+
+    "mount-surfacewater-swim": {
+    "poseTypes": ["WALK", "SWIM"],
+      "condition": "q.is_ridden",
+    "animations": [
+      "q.bedrock('ramcosta', 'water_idle')"
+    ],
+    "quirks": ["q.bedrock_quirk('ramcosta', 'blink')"]
+  },
+  "sleep": {
+    "poseTypes": ["SLEEP"],
+    "animations": ["q.bedrock('ramcosta', 'sleep')"]
+  }
+ }
+}

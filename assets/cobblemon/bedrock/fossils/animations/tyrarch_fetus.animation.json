@@ -1,0 +1,33 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"animation.tyrarch_fetus.sleep": {
+			"loop": true,
+			"animation_length": 4,
+			"bones": {
+				"body": {
+					"rotation": ["-0-math.sin(query.anim_time*90*1-60)*2", 0, "0+math.sin(query.anim_time*90*2)*2"],
+					"position": [0, "0+math.sin(query.anim_time*90*1)", 0]
+				},
+				"leg": {
+					"rotation": ["-0-math.sin(query.anim_time*90*1-80)*5", 0, "0+math.sin(query.anim_time*90*1-60)*5"]
+				},
+				"leg2": {
+					"rotation": ["-0-math.sin(query.anim_time*90*1-60)*5", 0, "0-math.sin(query.anim_time*90*1-60)*5"]
+				},
+				"tail": {
+					"rotation": ["-0-math.sin(query.anim_time*90*2-60)*5", 0, 0]
+				},
+				"arm": {
+					"rotation": ["-0-math.sin(query.anim_time*90*1-120)*5", 0, "10-math.sin(query.anim_time*90*1-60)*5"]
+				},
+				"arm2": {
+					"rotation": ["-0-math.sin(query.anim_time*90*1-120)*5", 0, "-15+math.sin(query.anim_time*90*1-60)*5"]
+				},
+				"neck": {
+					"rotation": ["25-math.sin(query.anim_time*90*2)*2", 0, 0]
+				}
+			}
+		}
+	}
+}

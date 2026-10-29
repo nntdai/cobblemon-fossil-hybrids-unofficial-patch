@@ -1,0 +1,13 @@
+{
+  "name": "cobblemon:anobuto_fetus",
+  "order": 0,
+  "variations": [
+    {
+      "aspects": [],
+      "poser": "cobblemon:anobuto_fetus",
+      "model": "cobblemon:anobuto_fetus.geo",
+      "texture": "cobblemon:textures/fossils/anobuto_fetus.png",
+      "layers": []
+    }
+  ]
+}

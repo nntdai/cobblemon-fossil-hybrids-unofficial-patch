@@ -1,0 +1,58 @@
+{
+ "head": "head",
+ "portraitScale": 0.6,
+ "portraitTranslation": [ 0, 1.5, 0 ],
+ "profileScale": 0.5,
+ "profileTranslation": [ 0, 1, 0 ],
+
+ "poses": {
+  "standing": {
+    "poseTypes": ["STAND", "NONE", "PORTRAIT", "PROFILE"],
+          "condition": "!q.in_air",
+    "isBattle": false,
+    "animations": ["look",
+      "q.bedrock('leemaura', 'ground_idle')"
+    ],
+    "quirks": [
+      "q.bedrock_quirk('leemaura', 'blink')"
+    ]
+  },
+   "battle-standing": {
+      "poseTypes": ["STAND"],
+      "isBattle": true,
+      "animations": [
+        "q.look('head')",
+        "q.bedrock('leemaura', 'battle_idle')"
+      ],
+      "quirks": ["q.bedrock_quirk('leemaura', 'blink')"]
+    },
+
+  "walking": {
+    "poseTypes": ["WALK"],
+      "condition": "!q.in_air && !q.is_sprinting",
+    "animations": ["look",
+      "q.bedrock('leemaura', 'ground_walk')"
+    ],
+    "quirks": ["q.bedrock_quirk('leemaura', 'blink')"]
+  },
+
+  "float": {
+    "poseTypes": ["FLOAT"],
+    "animations": [
+      "q.bedrock('leemaura', 'ground_idle')"
+    ],
+    "quirks": ["q.bedrock_quirk('leemaura', 'blink')"]
+  },
+  "swim": {
+    "poseTypes": ["SWIM"],
+    "animations": [
+      "q.bedrock('leemaura', 'ground_walk')"
+    ],
+    "quirks": ["q.bedrock_quirk('leemaura', 'blink')"]
+  },
+  "sleep": {
+    "poseTypes": ["SLEEP"],
+    "animations": ["q.bedrock('leemaura', 'sleep')"]
+  }
+ }
+}

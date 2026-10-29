@@ -1,0 +1,13 @@
+{
+  "name": "cobblemon:pawleo_fetus",
+  "order": 0,
+  "variations": [
+    {
+      "aspects": [],
+      "poser": "cobblemon:pawleo_fetus",
+      "model": "cobblemon:pawleo_fetus.geo",
+      "texture": "cobblemon:textures/fossils/pawleo_fetus.png",
+      "layers": []
+    }
+  ]
+}

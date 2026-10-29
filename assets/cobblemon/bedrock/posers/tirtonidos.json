@@ -1,0 +1,58 @@
+{
+ "head": "head",
+ "portraitScale": 1.5,
+ "portraitTranslation": [ -0.5, 0, 0 ],
+ "profileScale": 1.3,
+ "profileTranslation": [ -0.2, -0.3, 0 ],
+
+ "poses": {
+  "standing": {
+    "poseTypes": ["STAND", "NONE", "PORTRAIT", "PROFILE"],
+          "condition": "!q.in_air",
+    "isBattle": false,
+    "animations": ["q.look('head')",
+      "q.bedrock('tirtonidos', 'ground_idle')"
+    ],
+    "quirks": [
+      "q.bedrock_quirk('tirtonidos', 'blink')"
+    ]
+  },
+   "battle-standing": {
+      "poseTypes": ["STAND"],
+      "isBattle": true,
+      "animations": [
+        "q.look('head')",
+        "q.bedrock('tirtonidos', 'battle_idle')"
+      ],
+      "quirks": ["q.bedrock_quirk('tirtonidos', 'blink')"]
+    },
+
+  "walking": {
+    "poseTypes": ["WALK"],
+      "condition": "!q.in_air && !q.is_sprinting",
+    "animations": ["look",
+      "q.bedrock('tirtonidos', 'ground_walk')"
+    ],
+    "quirks": ["q.bedrock_quirk('tirtonidos', 'blink')"]
+  },
+
+  "float": {
+    "poseTypes": ["FLOAT"],
+    "animations": [
+      "q.bedrock('tirtonidos', 'water_idle')"
+    ],
+    "quirks": ["q.bedrock_quirk('tirtonidos', 'blink')"]
+  },
+  "swim": {
+    "poseTypes": ["SWIM"],
+    "animations": [
+      "q.bedrock('tirtonidos', 'water_swim')"
+    ],
+    "quirks": ["q.bedrock_quirk('tirtonidos', 'blink')"]
+  },
+  "sleep": {
+    "poseTypes": ["SLEEP"],
+    "animations": ["q.bedrock('tirtonidos', 'sleep')"]
+  }
+ }
+}

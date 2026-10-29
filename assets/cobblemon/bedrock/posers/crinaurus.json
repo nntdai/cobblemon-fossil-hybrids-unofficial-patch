@@ -1,0 +1,58 @@
+{
+ "head": "head",
+ "portraitScale": 0.5,
+ "portraitTranslation": [ -0.5, 2, 0 ],
+ "profileScale": 0.5,
+ "profileTranslation": [ 0, 1, 0 ],
+
+ "poses": {
+  "standing": {
+    "poseTypes": ["STAND", "NONE", "PORTRAIT", "PROFILE"],
+          "condition": "!q.in_air",
+    "isBattle": false,
+    "animations": ["look",
+      "q.bedrock('crinaurus', 'ground_idle')"
+    ],
+    "quirks": [
+      "q.bedrock_quirk('crinaurus', 'blink')"
+    ]
+  },
+   "battle-standing": {
+      "poseTypes": ["STAND"],
+      "isBattle": true,
+      "animations": [
+        "q.look('head')",
+        "q.bedrock('crinaurus', 'battle_idle')"
+      ],
+      "quirks": ["q.bedrock_quirk('crinaurus', 'blink')"]
+    },
+
+  "walking": {
+    "poseTypes": ["WALK"],
+      "condition": "!q.in_air && !q.is_sprinting",
+    "animations": ["look",
+      "q.bedrock('crinaurus', 'ground_walk')"
+    ],
+    "quirks": ["q.bedrock_quirk('crinaurus', 'blink')"]
+  },
+
+  "float": {
+    "poseTypes": ["FLOAT"],
+    "animations": [
+      "q.bedrock('crinaurus', 'ground_idle')"
+    ],
+    "quirks": ["q.bedrock_quirk('crinaurus', 'blink')"]
+  },
+  "swim": {
+    "poseTypes": ["SWIM"],
+    "animations": [
+      "q.bedrock('crinaurus', 'ground_walk')"
+    ],
+    "quirks": ["q.bedrock_quirk('crinaurus', 'blink')"]
+  },
+  "sleep": {
+    "poseTypes": ["SLEEP"],
+    "animations": ["q.bedrock('crinaurus', 'sleep')"]
+  }
+ }
+}

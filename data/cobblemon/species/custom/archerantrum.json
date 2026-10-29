@@ -1,0 +1,293 @@
+{
+  "implemented": true,
+  "nationalPokedexNumber": 5002,
+  "name": "archerantrum",
+  "primaryType": "dragon",
+  "secondaryType": "fighting",
+  "maleRatio": 0.875,
+  "height": 22,
+  "weight": 1400,
+  "pokedex": [
+    "cobblemon.species.archerantrum.desc"
+  ],
+  "labels": [
+    "hybrid",
+    "fossil"
+  ],
+  "aspects": [],
+  "abilities": [
+    "scrappy",
+    "stakeout",
+    "h:costar"
+  ],
+  "eggGroups": [
+    "undiscovered"
+  ],
+  "baseStats": {
+    "hp": 91,
+    "attack": 116,
+    "defence": 84,
+    "special_attack": 71,
+    "special_defence": 67,
+    "speed": 126
+  },
+  "evYield": {
+    "hp": 0,
+    "attack": 1,
+    "defence": 0,
+    "special_attack": 0,
+    "special_defence": 0,
+    "speed": 1
+  },
+  "baseExperienceYield": 180,
+  "experienceGroup": "slow",
+  "catchRate": 45,
+  "eggCycles": 30,
+  "baseFriendship": 50,
+  "baseScale": 0.7,
+  "hitbox": {
+    "height": 4,
+    "fixed": false,
+    "width": 5
+  },
+  "riding": {
+    "behaviours": {
+
+      "LAND": {
+        "key": "cobblemon:land/horse",
+        "rideSounds": [],
+        "stats": {
+          "ACCELERATION": "55-75",
+          "JUMP": "45-70",
+          "SKILL": "25-65",
+          "SPEED": "60-85",
+          "STAMINA": "65-90"
+        }
+      }
+    },
+    "seats": [
+      {
+        "offset": {
+          "x": 0.0,
+          "y": 0.0,
+          "z": 0.0
+        },
+        "poseOffsets": [
+          {
+            "offset": {
+              "x": 0.0,
+              "y": -1.5070343,
+              "z": -0.09068282
+            },
+            "poseTypes": [
+              "STAND"
+            ]
+          },
+          {
+            "offset": {
+              "x": 0.029872436,
+              "y": -1.4607906,
+              "z": -0.22310443
+            },
+            "poseTypes": [
+              "WALK"
+            ]
+          },
+          {
+            "offset": {
+              "x": -0.008484401,
+              "y": -1.7563306,
+              "z": 0.14831467
+            },
+            "poseTypes": [
+              "HOVER"
+            ]
+          },
+          {
+            "offset": {
+              "x": -0.015913066,
+              "y": -1.3609864,
+              "z": -0.5866023
+            },
+            "poseTypes": [
+              "FLY"
+            ]
+          },
+          {
+            "offset": {
+              "x": 0.0,
+              "y": -1.5070343,
+              "z": -0.09068282
+            },
+            "poseTypes": [
+              "FLOAT"
+            ]
+          },
+          {
+            "offset": {
+              "x": 0.029872436,
+              "y": -1.4607906,
+              "z": -0.22310443
+            },
+            "poseTypes": [
+              "SWIM"
+            ]
+          },
+          {
+            "offset": {
+              "x": 0.016652554,
+              "y": -1.4879361,
+              "z": 0.07469356
+            },
+            "poseTypes": [
+              "GLIDE"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "behaviour": {
+
+    "moving": {
+      "fly": {
+        "canFly": false
+      },
+      "walk": {
+        "walkSpeed": 0.3
+      },
+      "swim": {
+        "avoidsWater": true
+      }
+    },
+    "resting": {
+      "canSleep": true,
+      "light": "0-4",
+      "drowsyChance": 0.0333,
+      "rouseChance": 0.0042
+    },
+    "combat": {
+      "willDefendSelf": true,
+      "willDefendOwner": true,
+      "willFlee": false
+    }
+  },
+  "drops": {
+    "amount": 4,
+    "entries": [
+      {
+        "item": "cobblemon:jaw_fossil",
+        "quantityRange": "1-1"
+      },
+      {
+        "item": "cobblemon:plume_fossil",
+        "quantityRange": "1-1"
+      }
+    ]
+  },
+  "moves": [
+    "1:quickattack",
+    "1:tailwhip",
+    "1:machpunch",
+    "4:doublekick",
+    "7:charm",
+    "10:ancientpower",
+    "14:quickguard",
+    "17:dualchop",
+    "21:mefirst",
+    "24:rockslide",
+    "28:submission",
+    "31:counter",
+    "35:dragontail",
+    "40:jumpkick",
+    "46:outrage",
+    "51:agility",
+    "56:finalgambit",
+    "62:superpower",
+    "68:bravebird",
+    "tm:takedown", 
+    "tm:charm", 
+    "tm:agility", 
+    "tm:scaryface", 
+    "tm:protect", 
+    "tm:firefang", 
+    "tm:thunderfang", 
+    "tm:icefang", 
+    "tm:lowkick", 
+    "tm:acrobatics", 
+    "tm:facade", 
+    "tm:aerialace", 
+    "tm:bulldoze", 
+    "tm:rocktomb", 
+    "tm:lowsweep", 
+    "tm:aircutter", 
+    "tm:dragontail", 
+    "tm:endure", 
+    "tm:sunnyday", 
+    "tm:sandstorm", 
+    "tm:dig", 
+    "tm:brickbreak", 
+    "tm:zenheadbutt", 
+    "tm:uturn", 
+    "tm:shadowclaw", 
+    "tm:psychicfangs", 
+    "tm:bulkup", 
+    "tm:airslash", 
+    "tm:bodyslam", 
+    "tm:sleeptalk", 
+    "tm:rockblast", 
+    "tm:dragonclaw", 
+    "tm:stompingtantrum", 
+    "tm:rest", 
+    "tm:rockslide", 
+    "tm:taunt", 
+    "tm:bodypress", 
+    "tm:ironhead", 
+    "tm:dragondance", 
+    "tm:substitute", 
+    "tm:crunch", 
+    "tm:tailwind", 
+    "tm:dragonpulse", 
+    "tm:stealthrock", 
+    "tm:hypervoice", 
+    "tm:playrough", 
+    "tm:helpinghand", 
+    "tm:earthpower", 
+    "tm:reversal", 
+    "tm:earthquake", 
+    "tm:stoneedge", 
+    "tm:gigaimpact", 
+    "tm:outrage", 
+    "tm:focusblast", 
+    "tm:hyperbeam", 
+    "tm:bravebird", 
+    "tm:closecombat", 
+    "tm:dracometeor", 
+    "tm:roar", 
+    "tm:smackdown", 
+    "tm:highhorsepower", 
+    "tm:scaleshot", 
+    "tm:doubleedge", 
+    "tm:endeavor", 
+    "tm:coaching", 
+    "tm:featherdance", 
+    "tm:breakingswipe", 
+    "tm:dragoncheer", 
+    "tm:upperhand", 
+    "tm:return", 
+    "tm:frustration", 
+    "tm:hiddenpower",
+    "egg:headsmash",
+    "egg:knockoff",
+    "egg:defog",
+    "egg:bite",
+    "egg:switcheroo",
+    "egg:curse",
+    "egg:poisonfang",
+    "egg:rockthrow",
+    "tutor:allyswitch",
+    "tutor:steelwing",
+    "tutor:bounce"
+  ],
+  "evolutions": []
+}

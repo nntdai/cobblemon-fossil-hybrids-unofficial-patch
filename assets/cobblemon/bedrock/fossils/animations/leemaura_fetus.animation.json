@@ -1,0 +1,52 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"animation.leemaura_fetus.sleep": {
+			"loop": true,
+			"animation_length": 4,
+			"bones": {
+				"leemaura": {
+					"rotation": [-15, 0, 0],
+					"position": [0, -2, 0]
+				},
+				"body": {
+					"rotation": ["-40-math.sin(query.anim_time*90*1-120)*2", 0, "0+math.sin(query.anim_time*90*1-120)*2"],
+					"position": [0, "-1.7+math.sin(query.anim_time*90*1)", "-2.4+math.sin(query.anim_time*90*1-60)"]
+				},
+				"leg": {
+					"rotation": [40, 0, 0],
+					"position": [0, 0.6, 0]
+				},
+				"leg2": {
+					"rotation": [17.5, 0, 0],
+					"position": [0, 0.2, 0]
+				},
+				"leg3": {
+					"rotation": [40, 0, 0]
+				},
+				"leg4": {
+					"rotation": [42.5, 0, 0]
+				},
+				"tail": {
+					"rotation": [-37.5, 0, 0]
+				},
+				"neck": {
+					"rotation": ["55-math.sin(query.anim_time*90*1-180)*3", 0, "0+math.sin(query.anim_time*90*1)*2"],
+					"position": [0, 0.7, -0.5]
+				},
+				"arms": {
+					"rotation": [46.6724, -18.9869, 40.4133]
+				},
+				"arms2": {
+					"rotation": [45.8898, 22.2459, -47.0066]
+				},
+				"arms3": {
+					"rotation": [-140.9738, 9.3996, 144.1448]
+				},
+				"arms4": {
+					"rotation": [-35.4131, 8.1777, 39.2249]
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,198 @@
+{
+  "implemented": true,
+  "nationalPokedexNumber": 5001,
+  "name": "tyrarch",
+  "primaryType": "dragon",
+  "secondaryType": "fighting",
+  "maleRatio": 0.875,
+  "height": 8,
+  "weight": 210,
+  "pokedex": [
+    "cobblemon.species.tyrarch.desc"
+  ],
+  "labels": [
+    "hybrid",
+    "fossil"
+  ],
+  "aspects": [],
+  "abilities": [
+    "defeatist",
+    "stakeout",
+    "h:costar"
+  ],
+  "eggGroups": [
+    "undiscovered"
+  ],
+  "baseStats": {
+    "hp": 57,
+    "attack": 75,
+    "defence": 61,
+    "special_attack": 59,
+    "special_defence": 45,
+    "speed": 84
+  },
+  "evYield": {
+    "hp": 0,
+    "attack": 1,
+    "defence": 0,
+    "special_attack": 0,
+    "special_defence": 0,
+    "speed": 0
+  },
+  "baseExperienceYield": 75,
+  "experienceGroup": "slow",
+  "catchRate": 45,
+  "eggCycles": 30,
+  "baseFriendship": 50,
+  "baseScale": 0.5,
+  "hitbox": {
+    "height": 1,
+    "fixed": false,
+    "width": 2
+  },
+  "behaviour": {
+
+    "moving": {
+      "fly": {
+        "canFly": false
+      },
+      "walk": {
+        "walkSpeed": 0.3
+      },
+      "swim": {
+        "avoidsWater": true
+      }
+    },
+    "resting": {
+      "canSleep": true,
+      "light": "0-4",
+      "drowsyChance": 0.0333,
+      "rouseChance": 0.0042
+    },
+    "combat": {
+      "willDefendSelf": true,
+      "willDefendOwner": true,
+      "willFlee": false
+    }
+  },
+  "drops": {
+    "amount": 4,
+    "entries": [
+      {
+        "item": "cobblemon:jaw_fossil",
+        "quantityRange": "1-1"
+      },
+      {
+        "item": "cobblemon:plume_fossil",
+        "quantityRange": "1-1"
+      }
+    ]
+  },
+  "moves": [
+    "1:quickattack",
+    "1:tailwhip",
+    "4:doublekick",
+    "7:charm",
+    "10:ancientpower",
+    "14:quickguard",
+    "17:dualchop",
+    "21:mefirst",
+    "24:rockslide",
+    "28:submission",
+    "31:counter",
+    "35:dragontail",
+    "38:jumpkick",
+    "42:outrage",
+    "45:agility",
+    "49:finalgambit",
+    "tm:charm", 
+    "tm:agility", 
+    "tm:scaryface", 
+    "tm:protect", 
+    "tm:firefang", 
+    "tm:thunderfang", 
+    "tm:icefang", 
+    "tm:lowkick", 
+    "tm:acrobatics", 
+    "tm:facade", 
+    "tm:aerialace", 
+    "tm:rocktomb", 
+    "tm:lowsweep", 
+    "tm:aircutter", 
+    "tm:dragontail", 
+    "tm:endure", 
+    "tm:sunnyday", 
+    "tm:sandstorm", 
+    "tm:dig", 
+    "tm:brickbreak", 
+    "tm:zenheadbutt", 
+    "tm:uturn", 
+    "tm:shadowclaw", 
+    "tm:psychicfangs", 
+    "tm:bulkup", 
+    "tm:airslash",  
+    "tm:sleeptalk", 
+    "tm:rockblast", 
+    "tm:dragonclaw", 
+    "tm:rest", 
+    "tm:rockslide", 
+    "tm:taunt", 
+    "tm:ironhead", 
+    "tm:dragondance", 
+    "tm:substitute", 
+    "tm:crunch", 
+    "tm:tailwind", 
+    "tm:dragonpulse", 
+    "tm:stealthrock", 
+    "tm:hypervoice", 
+    "tm:playrough", 
+    "tm:helpinghand",  
+    "tm:reversal", 
+    "tm:outrage", 
+    "tm:focusblast", 
+    "tm:closecombat", 
+    "tm:dracometeor", 
+    "tm:roar", 
+    "tm:smackdown", 
+    "tm:scaleshot", 
+    "tm:endeavor", 
+    "tm:coaching", 
+    "tm:featherdance", 
+    "tm:breakingswipe", 
+    "tm:dragoncheer", 
+    "tm:upperhand", 
+    "tm:return", 
+    "tm:frustration", 
+    "tm:hiddenpower",
+    "egg:headsmash",
+    "egg:knockoff",
+    "egg:defog",
+    "egg:bite",
+    "egg:switcheroo",
+    "egg:curse",
+    "egg:poisonfang",
+    "egg:rockthrow",
+    "tutor:allyswitch",
+    "tutor:steelwing",
+    "tutor:bounce"
+  ],
+  "evolutions": [
+    {
+      "id": "tyrarch_archerantrum",
+      "variant": "level_up",
+      "result": "archerantrum",
+      "consumeHeldItem": false,
+      "learnableMoves": ["flyingpress"],
+      "requirements": [
+        {
+          "variant": "level",
+          "minLevel": 38
+        },
+        {
+          "variant": "time_range",
+          "range": "night"
+        }
+      ]
+    }
+  ]
+}

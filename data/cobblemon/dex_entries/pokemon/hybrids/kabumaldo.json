@@ -1,0 +1,15 @@
+{
+  "id": "cobblemon:kabumaldo",
+  "speciesId": "cobblemon:kabumaldo",
+  "displayAspects": [],
+  "conditionAspects": [],
+  "forms": [
+    {
+      "displayForm": "Normal",
+      "unlockForms": [
+        "Normal"
+      ]
+    }
+  ],
+  "variations": []
+}

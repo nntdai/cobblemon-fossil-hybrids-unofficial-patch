@@ -1,5 +1,5 @@
 # Cobblemon Fossil Hybrids - Unofficial Patch
-This is an **unofficial compatibility patch** for the **Cobblemon Fossil Hybrids!** datapack, specifically updated for compatibility with **Cobblemon 1.8.x** on **Minecraft 1.21.1 (NeoForge)**.
+This is an **unofficial compatibility patch** for the [Cobblemon Fossil Hybrids!](https://modrinth.com/datapack/cobblemon-fossil-hybrids) datapack, specifically updated for compatibility with **Cobblemon 1.8.x** on **Minecraft 1.21.1 (NeoForge)**.
 
 ## Description
 This patch fixes riding mechanics for hybrid Cobblemon that were broken or visually misaligned in 1.8.x versions of Cobblemon.

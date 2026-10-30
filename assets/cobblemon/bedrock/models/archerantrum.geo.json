@@ -343,7 +343,7 @@
 					]
 				},
 				{
-					"name": "iris2",
+					"name": "eye_right",
 					"parent": "head",
 					"pivot": [-7, 45.72069, -68.23558],
 					"cubes": [
@@ -352,13 +352,29 @@
 					]
 				},
 				{
-					"name": "iris",
+					"name": "locator_eye_right",
+					"parent": "eye_right",
+					"pivot": [-5, 21.8, -33.5],
+					"locators": {
+						"eye1": [-8, 45.8, -69.5]
+					}
+				},
+				{
+					"name": "eye_left",
 					"parent": "head",
 					"pivot": [7, 45.72069, -68.23558],
 					"cubes": [
 						{"origin": [7, 45.2, -69.5], "size": [0, 2, 2], "inflate": 0.04, "pivot": [7, 47.2, -66.5], "rotation": [10, 0, 0], "uv": [130, 168]},
 						{"origin": [7, 44.5, -69.8], "size": [0, 3, 3], "inflate": 0.03, "pivot": [7, 46.5, -65.8], "rotation": [10, 0, 0], "uv": [224, 61]}
 					]
+				},
+				{
+					"name": "locator_eye_left",
+					"parent": "eye_left",
+					"pivot": [5, 21.8, -33.5],
+					"locators": {
+						"eye2": [8, 45.8, -69.5]
+					}
 				},
 				{
 					"name": "fluff2",
@@ -494,6 +510,14 @@
 					"pivot": [0, 54, -20],
 					"locators": {
 						"seat_1": [0, 54, -20]
+					}
+				},
+				{
+					"name": "locator_seat_2",
+					"parent": "torso",
+					"pivot": [0, 54, -20],
+					"locators": {
+						"seat_2": [0, 54, -4]
 					}
 				}
 			]

@@ -17,6 +17,18 @@
             "model": "cobblemon:tyrarch.geo",
             "texture": "cobblemon:textures/pokemon/tyrarch/tyrarch_shiny.png",
             "layers": []
+        },
+        {
+            "aspects": [
+                "alpha_eyes"
+            ],
+            "layers": [
+                {
+                    "emissive": true,
+                    "name": "alpha_eyes",
+                    "texture": "cobblemon:textures/pokemon/tyrarch/tyrarch_alpha.png"
+                }
+            ]
         }
     ]
 }

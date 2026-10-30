@@ -2,13 +2,15 @@
 This is an **unofficial compatibility patch** for the [Cobblemon Fossil Hybrids!](https://modrinth.com/datapack/cobblemon-fossil-hybrids) datapack, specifically updated for compatibility with **Cobblemon 1.8.x** on **Minecraft 1.21.1 (NeoForge)**.
 
 ## Description
-This patch fixes riding mechanics for hybrid Cobblemon that were broken or visually misaligned in 1.8.x versions of Cobblemon.
+This patch includes various tweaks and improvements for full compatibility with Cobblemon 1.8.x, resolving display issues and extending overall UI functionality.
+
+- **Pokédex Integration**: Added custom hybrid species to the national dex via dex_additions, enabling right-click UI functionality for quicker Pokédex searches.
+- **UI & Poser Alignments**: Fine-tuned `portraitScale/Translation` and `profileScale/Translation` in poser JSON files to ensure hybrid models fit correctly in party menus and Pokédex views without overlapping.
 - **Seat Transformations**: Adjusted seat coordinate JSONs for `archerantrum` and `ramcosta` to ensure players sit in the correct position without visual glitches when riding.
 
 ## Requirements & Compatibility
 
 - **Minecraft**: 1.21.1
-- **Mod Loader**: NeoForge
 - **Target Mod**: Cobblemon 1.8.x
 
 ## Installation
@@ -19,7 +21,7 @@ This patch fixes riding mechanics for hybrid Cobblemon that were broken or visua
 4. Restart your client/server and enable the resource pack in-game to apply the patch.
 
 ## Credits
-This is an unofficial personal maintenance patch created to fix riding mechanics issues.
+
 - **Original Datapack**: Cobblemon Fossil Hybrids!
 - **Original Creators**: `bifesalgado` and `saucecoie`
 - **Original Source**: Available on [Modrinth](https://modrinth.com/datapack/cobblemon-fossil-hybrids)

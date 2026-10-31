@@ -173,6 +173,14 @@
 					]
 				},
 				{
+					"name": "locator_eye_right",
+					"parent": "eye_right",
+					"pivot": [-5, 21.8, -33.5],
+					"locators": {
+						"eye1": [-3.7, 11.2, -11.5]
+					}
+				},
+				{
 					"name": "eye_left",
 					"parent": "head",
 					"pivot": [3.5, 11.28367, -11.16044],
@@ -200,6 +208,14 @@
 						{"origin": [3.4, 10.11701, -12.49377], "size": [0, 2, 3], "inflate": 0.045, "uv": [23, 25], "mirror": true},
 						{"origin": [3.43, 9.61701, -11.99377], "size": [0, 1, 2], "inflate": 0.02, "uv": [4, 9], "mirror": true}
 					]
+				},
+				{
+					"name": "locator_eye_left",
+					"parent": "eye_left",
+					"pivot": [5, 21.8, -33.5],
+					"locators": {
+						"eye2": [3.7, 11.2, -11.5]
+					}
 				},
 				{
 					"name": "cranial_spikes",

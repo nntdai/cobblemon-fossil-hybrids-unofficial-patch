@@ -82,7 +82,8 @@
 
     },
     "seats": [
-      {"locator":"seat_1"}
+      {"locator":"seat_1"},
+      {"locator":"seat_2"}
     ]
   },
 

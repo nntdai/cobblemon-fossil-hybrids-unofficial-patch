@@ -17,6 +17,18 @@
             "model": "cobblemon:tirtonidos.geo",
             "texture": "cobblemon:textures/pokemon/tirtonidos/tirtonidos_shiny.png",
             "layers": []
+        },
+        {
+            "aspects": [
+                "alpha_eyes"
+            ],
+            "layers": [
+                {
+                    "emissive": true,
+                    "name": "alpha_eyes",
+                    "texture": "cobblemon:textures/pokemon/tirtonidos/tirtonidos_alpha.png"
+                }
+            ]
         }
     ]
 }

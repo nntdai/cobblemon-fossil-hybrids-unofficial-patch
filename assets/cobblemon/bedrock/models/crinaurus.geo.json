@@ -7,8 +7,8 @@
 				"texture_width": 256,
 				"texture_height": 256,
 				"visible_bounds_width": 16,
-				"visible_bounds_height": 7.5,
-				"visible_bounds_offset": [0, 3.25, 0]
+				"visible_bounds_height": 8,
+				"visible_bounds_offset": [0, 3, 0]
 			},
 			"bones": [
 				{
@@ -131,13 +131,41 @@
 				{
 					"name": "eyes",
 					"parent": "head",
-					"pivot": [0, 66.62561, -19.90263],
+					"pivot": [0, 66.62561, -19.90263]
+				},
+				{
+					"name": "eye_left",
+					"parent": "eyes",
+					"pivot": [0, 66.9, -19.6],
 					"cubes": [
 						{"origin": [5, 65.2, -22.4], "size": [0, 3, 5], "inflate": 0.01, "pivot": [0, 67.2, -19.9], "rotation": [5, 0, 0], "uv": [42, 112]},
-						{"origin": [5, 64.9, -22.1], "size": [0, 3, 5], "inflate": 0.004, "pivot": [0, 66.9, -19.6], "rotation": [7.5, 0, 0], "uv": [180, 67]},
-						{"origin": [-5, 64.9, -22.1], "size": [0, 3, 5], "inflate": 0.004, "pivot": [0, 66.9, -19.6], "rotation": [7.5, 0, 0], "uv": [180, 67], "mirror": true},
-						{"origin": [-5, 65.2, -22.4], "size": [0, 3, 5], "inflate": 0.01, "pivot": [0, 67.2, -19.9], "rotation": [5, 0, 0], "uv": [42, 112], "mirror": true}
+						{"origin": [5, 64.9, -22.1], "size": [0, 3, 5], "inflate": 0.004, "pivot": [0, 66.9, -19.6], "rotation": [7.5, 0, 0], "uv": [180, 67]}
 					]
+				},
+				{
+					"name": "locator_eye_left",
+					"parent": "eye_left",
+					"pivot": [4.5, 65, -16],
+					"locators": {
+						"eye2": [4.5, 66, -20.5]
+					}
+				},
+				{
+					"name": "eye_right",
+					"parent": "eyes",
+					"pivot": [0, 66.9, -19.6],
+					"cubes": [
+						{"origin": [-5, 65.2, -22.4], "size": [0, 3, 5], "inflate": 0.01, "pivot": [0, 67.2, -19.9], "rotation": [5, 0, 0], "uv": [42, 112], "mirror": true},
+						{"origin": [-5, 64.9, -22.1], "size": [0, 3, 5], "inflate": 0.004, "pivot": [0, 66.9, -19.6], "rotation": [7.5, 0, 0], "uv": [180, 67], "mirror": true}
+					]
+				},
+				{
+					"name": "locator_eye_right",
+					"parent": "eye_right",
+					"pivot": [5, 21.8, -33.5],
+					"locators": {
+						"eye1": [-4.5, 66, -20.5]
+					}
 				},
 				{
 					"name": "iris",

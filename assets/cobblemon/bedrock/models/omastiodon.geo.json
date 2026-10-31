@@ -149,9 +149,7 @@
 						{"origin": [-5.3753, 4.13492, -13.5], "size": [2, 4, 3], "inflate": 0.01, "pivot": [0.6247, 5.13492, -6.5], "rotation": [0, 0, 42.5], "uv": [1, 67]},
 						{"origin": [3.3753, 4.13492, -13.5], "size": [2, 4, 3], "inflate": 0.01, "pivot": [-0.6247, 5.13492, -6.5], "rotation": [0, 0, -42.5], "uv": [1, 67]},
 						{"origin": [-6, 8.5, -10.5], "size": [12, 10, 5], "uv": [50, 61]},
-						{"origin": [-6.2, 16.3, -13.6], "size": [3, 3, 3], "inflate": 0.5, "uv": [90, 20]},
 						{"origin": [1.7, 11.1, -13.5], "size": [4, 2, 0], "inflate": 0.02, "pivot": [4.2, 12.1, -13.5], "rotation": [0, 0, -15], "uv": [96, 41]},
-						{"origin": [3.2, 16.3, -13.6], "size": [3, 3, 3], "inflate": 0.5, "uv": [90, 26]},
 						{"origin": [-2, 11.1, -13.5], "size": [4, 8, 4], "inflate": 0.02, "pivot": [0, 19.1, -11.5], "rotation": [-20, 0, 0], "uv": [54, 85]},
 						{"origin": [-6.7, 13, -14.3], "size": [5, 1, 1], "inflate": 0.2, "pivot": [-3.7, 13.5, -13.8], "rotation": [0, 0, 17.5], "uv": [90, 32]},
 						{"origin": [1.7, 13, -14.3], "size": [5, 1, 1], "inflate": 0.2, "pivot": [3.7, 13.5, -13.8], "rotation": [0, 0, -17.5], "uv": [94, 34]},
@@ -179,6 +177,43 @@
 						{"origin": [-1, 33.42335, -1.05475], "size": [2, 4, 2], "pivot": [0, 35.42335, -0.05475], "rotation": [25, 0, 0], "uv": [80, 93]},
 						{"origin": [3, 7.1, -13.5], "size": [3, 3, 3], "uv": [0, 67], "mirror": true}
 					]
+				},
+				{
+					"name": "upperhalf4",
+					"parent": "upperhalf",
+					"pivot": [0, 0, 0]
+				},
+				{
+					"name": "upperhalf3",
+					"parent": "upperhalf4",
+					"pivot": [0, 0, 0],
+					"cubes": [
+						{"origin": [-6.2, 16.3, -13.6], "size": [3, 3, 3], "inflate": 0.5, "uv": [90, 20]}
+					]
+				},
+				{
+					"name": "locator_eye_right",
+					"parent": "upperhalf3",
+					"pivot": [-5, 21.8, -33.5],
+					"locators": {
+						"eye1": [-4.6, 17.6, -14]
+					}
+				},
+				{
+					"name": "upperhalf2",
+					"parent": "upperhalf4",
+					"pivot": [0, 0, 0],
+					"cubes": [
+						{"origin": [3.2, 16.3, -13.6], "size": [3, 3, 3], "inflate": 0.5, "uv": [90, 26]}
+					]
+				},
+				{
+					"name": "locator_eye_left",
+					"parent": "upperhalf2",
+					"pivot": [5, 21.8, -33.5],
+					"locators": {
+						"eye2": [4.6, 17.6, -14]
+					}
 				},
 				{
 					"name": "leg3",

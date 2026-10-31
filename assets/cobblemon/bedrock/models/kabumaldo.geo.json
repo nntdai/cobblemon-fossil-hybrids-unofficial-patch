@@ -6,9 +6,9 @@
 				"identifier": "geometry.kabumaldo",
 				"texture_width": 256,
 				"texture_height": 256,
-				"visible_bounds_width": 7,
-				"visible_bounds_height": 3,
-				"visible_bounds_offset": [0, 0.5, 0]
+				"visible_bounds_width": 11,
+				"visible_bounds_height": 4,
+				"visible_bounds_offset": [0, 1, 0]
 			},
 			"bones": [
 				{
@@ -241,8 +241,13 @@
 					]
 				},
 				{
-					"name": "eye2",
+					"name": "eyes3",
 					"parent": "head",
+					"pivot": [3.14066, 16.39436, -36]
+				},
+				{
+					"name": "eye_left",
+					"parent": "eyes3",
 					"pivot": [3.14066, 16.39436, -36],
 					"cubes": [
 						{"origin": [6, 19.2, -37], "size": [4, 8, 2], "inflate": 0.02, "pivot": [7.5, 23.2, -36], "rotation": [0, 0, 35], "uv": [118, 122], "mirror": true},
@@ -251,7 +256,7 @@
 				},
 				{
 					"name": "eyes2",
-					"parent": "eye2",
+					"parent": "eye_left",
 					"pivot": [7.34194, 21.98006, -37],
 					"cubes": [
 						{"origin": [7.2, 20, -37], "size": [2, 5, 0], "inflate": 0.04, "pivot": [6.7, 23, -36], "rotation": [0, 0, 35], "uv": [46, 69], "mirror": true},
@@ -259,8 +264,16 @@
 					]
 				},
 				{
-					"name": "eye",
-					"parent": "head",
+					"name": "locator_eye_left",
+					"parent": "eye_left",
+					"pivot": [7, 21.5, -33.5],
+					"locators": {
+						"eye2": [7, 21.5, -36.5]
+					}
+				},
+				{
+					"name": "eye_right",
+					"parent": "eyes3",
 					"pivot": [-2.7413, 16.18721, -36.5],
 					"cubes": [
 						{"origin": [-10, 19.2, -37], "size": [4, 8, 2], "inflate": 0.02, "pivot": [-7.5, 23.2, -36], "rotation": [0, 0, -35], "uv": [118, 122]},
@@ -269,12 +282,20 @@
 				},
 				{
 					"name": "eyes",
-					"parent": "eye",
+					"parent": "eye_right",
 					"pivot": [-7.34194, 21.98006, -37],
 					"cubes": [
 						{"origin": [-9.2, 20, -37], "size": [2, 5, 0], "inflate": 0.04, "pivot": [-6.7, 23, -36], "rotation": [0, 0, -35], "uv": [46, 69]},
 						{"origin": [-8.04194, 21.73006, -37], "size": [2, 1, 0], "inflate": 0.05, "pivot": [-7.04194, 22.23006, -37], "rotation": [0, 0, -87.5], "uv": [70, 32]}
 					]
+				},
+				{
+					"name": "locator_eye_right",
+					"parent": "eye_right",
+					"pivot": [-4.3, 21.8, -33.5],
+					"locators": {
+						"eye1": [-7, 21.5, -36.5]
+					}
 				},
 				{
 					"name": "arm",

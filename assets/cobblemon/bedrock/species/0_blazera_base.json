@@ -43,6 +43,18 @@
           "translucent": false
         }
       ]
-    }
+    },
+    {
+            "aspects": [
+                "alpha_eyes"
+            ],
+            "layers": [
+                {
+                    "emissive": true,
+                    "name": "alpha_eyes",
+                    "texture": "cobblemon:textures/pokemon/blazera/blazera_alpha.png"
+                }
+            ]
+        }
   ]
 }

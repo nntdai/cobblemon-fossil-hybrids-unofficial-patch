@@ -256,11 +256,39 @@
 				{
 					"name": "eyes",
 					"parent": "head",
+					"pivot": [0, 24.5, -14.16066]
+				},
+				{
+					"name": "eye_right",
+					"parent": "eyes",
 					"pivot": [0, 24.5, -14.16066],
 					"cubes": [
-						{"origin": [-3.75, 23, -16.41066], "size": [3, 3, 0], "inflate": 0.01, "pivot": [0, 24.5, -14.16066], "rotation": [0, 45, 0], "uv": [86, 62]},
+						{"origin": [-3.75, 23, -16.41066], "size": [3, 3, 0], "inflate": 0.01, "pivot": [0, 24.5, -14.16066], "rotation": [0, 45, 0], "uv": [86, 62]}
+					]
+				},
+				{
+					"name": "locator_eye_right",
+					"parent": "eye_right",
+					"pivot": [0, 24.5, -14.16066],
+					"locators": {
+						"eye1": [-2.75, 24, -14.5]
+					}
+				},
+				{
+					"name": "eye_left",
+					"parent": "eyes",
+					"pivot": [0, 24.5, -14.16066],
+					"cubes": [
 						{"origin": [0.75, 23, -16.41066], "size": [3, 3, 0], "inflate": 0.01, "pivot": [0, 24.5, -14.16066], "rotation": [0, -45, 0], "uv": [40, 86]}
 					]
+				},
+				{
+					"name": "locator_eye_left",
+					"parent": "eye_left",
+					"pivot": [0, 24.5, -14.16066],
+					"locators": {
+						"eye2": [2.75, 24, -14.5]
+					}
 				},
 				{
 					"name": "ear2",

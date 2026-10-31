@@ -1,5 +1,5 @@
 # Cobblemon Fossil Hybrids - Unofficial Patch
-This is an **unofficial compatibility patch** for the [Cobblemon Fossil Hybrids!](https://modrinth.com/datapack/cobblemon-fossil-hybrids) datapack, specifically updated for compatibility with **Cobblemon 1.8.x** on **Minecraft 1.21.1 (NeoForge)**.
+This is an **unofficial compatibility patch** for the [Cobblemon Fossil Hybrids!](https://modrinth.com/datapack/cobblemon-fossil-hybrids) datapack, specifically updated for compatibility with **Cobblemon 1.8.x**.
 
 ## Description
 This patch includes various tweaks and improvements for full compatibility with Cobblemon 1.8.x, resolving display issues and extending overall UI functionality.

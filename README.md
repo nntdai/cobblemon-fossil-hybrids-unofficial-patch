@@ -4,9 +4,10 @@ This is an **unofficial compatibility patch** for the [Cobblemon Fossil Hybrids!
 ## Description
 This patch includes various tweaks and improvements for full compatibility with Cobblemon 1.8.x, resolving display issues and extending overall UI functionality.
 
+- **Alpha Hybrids Cobblemon**: Finished all Alpha hybrid model updates.
 - **Pokédex Integration**: Added custom hybrid species to the national dex via dex_additions, enabling right-click UI functionality for quicker Pokédex searches.
 - **UI & Poser Alignments**: Fine-tuned `portraitScale/Translation` and `profileScale/Translation` in poser JSON files to ensure hybrid models fit correctly in party menus and Pokédex views without overlapping.
-- **Seat Transformations**: Adjusted seat coordinate JSONs for `archerantrum` and `ramcosta` to ensure players sit in the correct position without visual glitches when riding.
+- **Seat Transformations**: Adjusted seat coordinate JSONs and added passenger seats for archerantrum and ramcosta to ensure players sit in the correct position without visual glitches when riding.
 
 ## Requirements & Compatibility
 

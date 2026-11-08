@@ -4,17 +4,37 @@
  "profileScale": 0.58,
  "profileTranslation": [0, 0.78, 0],
  "animations": {
+        "cry": "q.bedrock_stateful('oozera', 'cry',q.curve('symmetrical_wide'))",
+        "physical": "q.bedrock_primary('oozera', 'physical', q.curve('symmetrical_wide'))",
+        "recoil": "q.bedrock_stateful('oozera', 'recoil')",
+        "special": "q.bedrock_primary('oozera', 'special', q.curve('symmetrical_wide'))",
+        "status": "q.bedrock_primary('oozera', 'status', q.curve('symmetrical_wide'))"
  },
  "poses": {
    "battle-standing": {
-     "poseTypes": ["STAND"],
-     "isBattle": true,
      "animations": [
        "q.look('head')",
        "q.bedrock('oozera', 'battle_idle')"
      ],
+     "poseTypes": ["STAND"],
+     "isBattle": true,
      "quirks": ["q.bedrock_quirk('oozera', 'blink')"]
    },
+   "jump": {
+            "animations": [
+                "q.look('head')",
+                "q.bedrock('oozera', 'ride_jump')"
+            ],
+            "condition": "q.in_air",
+            "isBattle": false,
+            "poseTypes": [
+                "STAND",
+                "WALK"
+        
+            ],
+            "transformTicks": 5,
+            "transformToTicks": 5
+        },
    "standing": {
      "poseTypes": ["STAND", "NONE", "PORTRAIT", "PROFILE"],
      "isBattle": false,
@@ -26,24 +46,28 @@
        "q.bedrock_quirk('oozera', 'blink')"
      ]
    },
-   "walking": {
-     "poseTypes": ["WALK"],
-     "animations": [
-       "q.look('head')",
-       "q.bedrock('oozera', 'ground_walk')"
-     ],
-     "quirks": ["q.bedrock_quirk('oozera', 'blink')"]
-   },
+
+   "run": {
+  "animations": [
+    "q.bedrock('oozera', 'ground_run')"
+  ],
+  "condition": "!q.in_air && q.is_sprinting",
+  "isBattle": false,
+  "poseTypes": ["STAND", "WALK"],
+  "quirks": ["q.bedrock_quirk('oozera', 'blink')"]
+},
+   "walk": {
+  "animations": [
+    "q.look('head')",
+    "q.is_ridden ? q.bedrock('oozera', 'ride_ground_walk') : q.bedrock('oozera', 'ground_walk')"
+  ],
+  "condition": "!q.in_air && !q.is_sprinting",
+  "poseTypes": ["WALK"],
+  "quirks": ["q.bedrock_quirk('oozera', 'blink')"]
+},
+
    "hover": {
      "poseTypes": ["HOVER"],
-     "animations": [
-       "q.look('head')",
-       "q.bedrock('oozera', 'ground_idle')"
-     ],
-     "quirks": ["q.bedrock_quirk('oozera', 'blink')"]
-   },
-   "fly": {
-     "poseTypes": ["FLY"],
      "animations": [
        "q.look('head')",
        "q.bedrock('oozera', 'ground_idle')"

@@ -440,6 +440,14 @@
 					]
 				},
 				{
+					"name": "locator_seat_1",
+					"parent": "head",
+					"pivot": [0, 0, 0],
+					"locators": {
+						"seat_1": [0, 75, -12]
+					}
+				},
+				{
 					"name": "frill12",
 					"parent": "neck4",
 					"pivot": [10.30606, 61.11017, -2.12439],
@@ -789,6 +797,22 @@
 					"cubes": [
 						{"origin": [-11.8, 25.2, 101.2], "size": [3, 9, 3], "inflate": 0.6, "pivot": [-10.3, 21.2, 102.7], "rotation": [0, 0, -97.5], "uv": [42, 100]}
 					]
+				},
+				{
+					"name": "locator_seat_2",
+					"parent": "tail",
+					"pivot": [0, 0, 0],
+					"locators": {
+						"seat_2": [0, 30, 22]
+					}
+				},
+				{
+					"name": "locator_seat_3",
+					"parent": "tail",
+					"pivot": [0, 0, 0],
+					"locators": {
+						"seat_3": [0, 30, 34]
+					}
 				},
 				{
 					"name": "tentacle",

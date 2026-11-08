@@ -4,7 +4,10 @@
  "portraitTranslation": [ -1, 2, 0 ],
  "profileScale": 0.3,
  "profileTranslation": [ 0, 1.2, 0 ],
-
+ "animations": {
+        "cry": "q.bedrock_stateful('archerantrum', 'cry')",
+        "physical": "q.bedrock_primary('archerantrum', 'physical', q.curve('symmetrical_wide'))"
+    },
  "poses": {
   "standing": {
     "poseTypes": ["STAND", "NONE", "PORTRAIT", "PROFILE"],

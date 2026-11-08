@@ -7,8 +7,8 @@
 				"texture_width": 128,
 				"texture_height": 128,
 				"visible_bounds_width": 9,
-				"visible_bounds_height": 3.5,
-				"visible_bounds_offset": [0, 1.25, 0]
+				"visible_bounds_height": 4.5,
+				"visible_bounds_offset": [0, 1.75, 0]
 			},
 			"bones": [
 				{
@@ -345,6 +345,22 @@
 					"cubes": [
 						{"origin": [21.5, 10.16272, -17.78974], "size": [5, 0, 10], "uv": [11, 0], "mirror": true}
 					]
+				},
+				{
+					"name": "locator_seat_1",
+					"parent": "torso1",
+					"pivot": [0, 42, -49],
+					"locators": {
+						"seat_1": [0, 19, -15]
+					}
+				},
+				{
+					"name": "locator_seat_2",
+					"parent": "torso1",
+					"pivot": [0, 42, -49],
+					"locators": {
+						"seat_2": [0, 19, -1]
+					}
 				}
 			]
 		}

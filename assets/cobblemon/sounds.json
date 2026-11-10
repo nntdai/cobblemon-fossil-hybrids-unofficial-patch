@@ -1,0 +1,24 @@
+{
+    "pokemon.blazera.cry": {
+        "sounds": [ {
+            "name": "cobblemon:pokemon/blazera/blazera_cry",
+            "volume": 2
+        }
+    ]
+    },
+    "pokemon.archerantrum.cry": {
+        "sounds": [ {
+            "name": "cobblemon:pokemon/archerantrum/archerantrum_cry",
+            "volume": 0.5
+        }
+    ]
+    },
+    "pokemon.oozera.cry": {
+        "sounds": [ {
+            "name": "cobblemon:pokemon/oozera/oozera_cry",
+            "volume": 1
+        }
+    ]
+    }
+   
+}

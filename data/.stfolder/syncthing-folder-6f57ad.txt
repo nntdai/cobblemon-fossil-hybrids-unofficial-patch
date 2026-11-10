@@ -1,0 +1,5 @@
+# This directory is a Syncthing folder marker.
+# Do not delete.
+
+folderID: svzb4-pyxdq
+created: 2026-11-08T17:20:38+07:00

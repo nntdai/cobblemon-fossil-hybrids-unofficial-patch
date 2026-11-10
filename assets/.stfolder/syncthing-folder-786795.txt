@@ -1,0 +1,5 @@
+# This directory is a Syncthing folder marker.
+# Do not delete.
+
+folderID: ezszb-puama
+created: 2026-11-08T16:03:58+07:00

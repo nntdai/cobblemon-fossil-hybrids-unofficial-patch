@@ -29,6 +29,32 @@
       }
     }
   },
+   "riding": {
+    "behaviours": {
+      "LAND": {
+        "key": "cobblemon:land/horse",
+        "rideSounds": [],
+        "stats": {
+          "ACCELERATION": "5–10",
+          "JUMP": "5-10",
+          "SKILL": "10-35",
+          "SPEED": "10-14",
+          "STAMINA": "60–80"
+        }
+      }  
+    },
+    "seats": [
+            {
+                "locator": "seat_1"
+            },
+            {
+                "locator": "seat_2"
+            },
+            {
+                "locator": "seat_3"
+            }
+        ]
+      },
   "catchRate": 45,
   "maleRatio": 0.875,
   "shoulderMountable": false,

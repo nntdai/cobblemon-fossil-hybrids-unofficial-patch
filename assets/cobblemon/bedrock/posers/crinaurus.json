@@ -26,7 +26,22 @@
       ],
       "quirks": ["q.bedrock_quirk('crinaurus', 'blink')"]
     },
-
+    "run": {
+            "animations": [
+                "q.look('head')",
+                "q.bedrock('crinaurus', 'ground_walk')",
+                {
+                    "animation": "q.bedrock('crinaurus', 'ground_walk2')",
+                    "condition": "q.is_ridden"
+                }
+            ],
+            "condition": "!q.in_air && q.is_sprinting",
+            "isBattle": false,
+            "poseTypes": [
+                "STAND",
+                "WALK"
+            ]
+        },
   "walking": {
     "poseTypes": ["WALK"],
       "condition": "!q.in_air && !q.is_sprinting",
